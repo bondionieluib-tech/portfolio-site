@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClimaCore Systems | Bon Dionie Luib</title>
+  <meta name="description" content="ClimaCore Systems: a mock HVAC company built as a demonstration project, with a landing page, support email routing and n8n booking automation." />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">BDL <span>.</span></a>
+      <div class="nav-links">
+        <a href="index.html#offer">Services</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#tools">Tools</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="index.html#connect">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <a href="projects.html#mock-project" class="crumb">← All projects</a>
+      <div class="section-eyebrow">Mock Project</div>
+      <h1 class="page-title">Clima<span class="heading-accent">Core</span> Systems.</h1>
+      <p class="page-lead">A fictional HVAC company I'm using to build a complete small-business setup from scratch: a landing page, a support inbox, booking automation, and an AI chat agent on top.</p>
+
+      <div class="meta-row">
+        <div class="meta-item"><div class="meta-label">Type</div><div class="meta-value">Mock / demonstration</div></div>
+        <div class="meta-item"><div class="meta-label">Status</div><div class="meta-value">In progress</div></div>
+        <div class="meta-item"><div class="meta-label">Stack</div><div class="meta-value">n8n · Airtable · Postgres · Gmail · Vercel</div></div>
+      </div>
+
+      <div class="detail-actions">
+        <!-- TODO: confirm the landing page loads without a certificate warning before publishing this link -->
+        <a href="https://climacore.naivegeek.xyz" class="btn-primary" target="_blank" rel="noopener">Visit Landing Page</a>
+        <a href="https://calendar.app.google/8JxHr8yGaSbAm5hw6" class="btn-outline" target="_blank" rel="noopener">Ask me about it</a>
+      </div>
+    </div>
+  </header>
+
+  <hr class="divider" />
+
+  <!-- ══ OVERVIEW ══ -->
+  <section class="detail-section">
+    <div class="container">
+      <div class="section-eyebrow">Overview</div>
+      <h2 class="section-title">Why I <span class="heading-accent">built it.</span></h2>
+      <div class="prose">
+        <p>ClimaCore is not a real company. I made it so I could build and test the pieces a small service business actually needs, in one place, instead of in separate disconnected demos: a public website, a branded support inbox, a way for customers to book, reschedule and cancel, and an assistant that can answer common questions.</p>
+        <p>Each piece below is labeled with where it stands today, and I update the labels as the build moves forward.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ WHAT'S IN IT ══ -->
+  <section class="detail-section alt">
+    <div class="container">
+      <div class="section-eyebrow">What's In It</div>
+      <h2 class="section-title">Six parts, <span class="heading-accent">one business.</span></h2>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-card-top"><h3>Landing page</h3><span class="status status-live">Live</span></div>
+          <p>A marketing site for the company, hosted on Vercel under its own subdomain.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-top"><h3>Support email routing</h3><span class="status status-live">Live</span></div>
+          <p>A branded support address on a custom domain, set up with Cloudflare Email Routing and forwarded into a working inbox.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-top"><h3>Booking workflow</h3><span class="status status-progress">In progress</span></div>
+          <p>A new booking comes in through a webhook, gets matched against existing customers in Airtable, creates or updates the record, sends a Gmail confirmation, and logs the change to a Postgres audit table. A day-before reminder is part of the same build.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-top"><h3>Rescheduling workflow</h3><span class="status status-progress">In progress</span></div>
+          <p>A reschedule request is looked up in Airtable, confirmed by email, and sent to a technician for approval through Telegram, with a calendar-based availability check being added.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-top"><h3>Cancellation workflow</h3><span class="status status-planned">Planned</span></div>
+          <p>The third leg of the booking system. It will follow the same pattern as the other two.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-top"><h3>AI chat agent</h3><span class="status status-planned">Planned</span></div>
+          <p>A website chat widget backed by a retrieval pipeline over the company's own FAQs and service info, with an offline notice when the backend isn't running.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ HOW BOOKING WORKS ══ -->
+  <section class="detail-section">
+    <div class="container">
+      <div class="section-eyebrow">Under the Hood</div>
+      <h2 class="section-title">How a booking <span class="heading-accent">flows.</span></h2>
+      <p class="section-desc">The booking workflow as it currently stands.</p>
+
+      <div class="flow-label">New booking</div>
+      <div class="flow">
+        <span class="flow-step">Webhook</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Search Airtable</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Existing customer?</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Update or create record</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Gmail confirmation</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Postgres audit log</span>
+      </div>
+
+      <div class="flow-label">Reschedule</div>
+      <div class="flow">
+        <span class="flow-step">Reschedule form</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Search Airtable</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Gmail</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Technician approval (Telegram)</span><span class="flow-arrow">→</span>
+        <span class="flow-step">Confirm or reassign</span>
+      </div>
+
+      <div class="note-box">
+        <strong>About this project:</strong> ClimaCore is a demonstration, built to show how I design and connect these systems. The workflows run on my own self-hosted n8n, so the live chat agent will show an offline notice whenever that server is down; the rest of this site doesn't depend on it.
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ══ TOOLS ══ -->
+  <section class="detail-section alt">
+    <div class="container">
+      <div class="section-eyebrow">Tools Used</div>
+      <h2 class="section-title">The <span class="heading-accent">stack.</span></h2>
+      <div class="project-tags" style="margin-top:24px;">
+        <span class="project-tag">n8n (self-hosted)</span>
+        <span class="project-tag">Airtable</span>
+        <span class="project-tag">Postgres</span>
+        <span class="project-tag">Gmail</span>
+        <span class="project-tag">Telegram</span>
+        <span class="project-tag">Google Calendar</span>
+        <span class="project-tag">Cloudflare Email Routing</span>
+        <span class="project-tag">Cloudflare Tunnel</span>
+        <span class="project-tag">Vercel</span>
+      </div>
+      <div class="detail-actions">
+        <a href="projects.html#mock-project" class="btn-outline">← Back to all projects</a>
+        <a href="index.html#connect" class="btn-primary">Let's Work Together</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">BDL <span>.</span></div>
+      <div class="footer-copy">© 2026 Bon Dionie Luib. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#connect">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
