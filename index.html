@@ -4,296 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bon Dionie Luib | E-commerce VA & Customer Support</title>
-<<<<<<< HEAD
   <meta name="description" content="E-commerce virtual assistant, customer support representative and Shopify specialist. Shopify operations, customer support and n8n automation projects." />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-=======
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-
-  <style>
-    :root {
-      --bg:         #0f0e0c;
-      --bg-2:       #181714;
-      --bg-3:       #1f1d1a;
-      --bg-navy:    #12232e;
-      --border:     #2c2924;
-      --border-mid: #3d3830;
-      --cream:      #FEFAE0;
-      --sand:       #FAEDCD;
-      --tan:        #D4A373;
-      --sage:       #CCD5AE;
-      --sage-light: #E9EDC9;
-      --text:       #f2ede4;
-      --text-mid:   #b5a99a;
-      --text-muted: #6e6257;
-      --radius:     14px;
-      --radius-sm:  8px;
-      --max-w:      1080px;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: inherit; text-decoration: none; }
-    ul { list-style: none; }
-    img { display: block; max-width: 100%; }
-
-    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
-    section { padding: 100px 0; }
-
-    .section-eyebrow {
-      display: inline-flex; align-items: center; gap: 10px;
-      font-family: 'Syne', sans-serif; font-size: 0.7rem; font-weight: 700;
-      letter-spacing: 0.18em; text-transform: uppercase; color: var(--tan); margin-bottom: 16px;
-    }
-    .section-eyebrow::before {
-      content: ''; display: block; width: 24px; height: 2px;
-      background: var(--tan); border-radius: 2px;
-    }
-    .section-title {
-      font-family: 'Syne', sans-serif; font-size: clamp(1.8rem, 4vw, 2.7rem);
-      font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 16px;
-    }
-    .section-desc { color: var(--text-mid); font-size: 0.97rem; font-weight: 300; max-width: 540px; line-height: 1.8; }
-    .heading-accent { color: var(--tan); }
-
-    .pill {
-      display: inline-block; background: rgba(212,163,115,0.1); color: var(--tan);
-      border: 1px solid rgba(212,163,115,0.22); border-radius: 999px; font-size: 0.7rem;
-      font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 13px;
-    }
-
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-      background: rgba(15,14,12,0.85); backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border);
-    }
-    .nav-inner {
-      max-width: var(--max-w); margin: 0 auto; padding: 0 32px; height: 58px;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 0.95rem; letter-spacing: -0.01em; }
-    .nav-logo span { color: var(--tan); }
-    .nav-links { display: flex; gap: 30px; }
-    .nav-links a { font-size: 0.8rem; font-weight: 500; color: var(--text-muted); letter-spacing: 0.04em; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--tan); }
-
-    #hero { padding-top: 148px; padding-bottom: 110px; position: relative; overflow: hidden; }
-    #hero::before {
-      content: ''; position: absolute; top: -80px; left: -100px; width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(212,163,115,0.07) 0%, transparent 70%); pointer-events: none;
-    }
-    #hero::after {
-      content: ''; position: absolute; top: 0; right: -60px; width: 360px; height: 360px;
-      background: radial-gradient(circle, rgba(18,35,46,0.8) 0%, transparent 70%); pointer-events: none;
-    }
-    .hero-inner { display: grid; grid-template-columns: auto 1fr; gap: 64px; align-items: center; position: relative; z-index: 1; }
-    .hero-photo-wrap { display: flex; flex-direction: column; align-items: center; gap: 14px; }
-    .hero-photo { width: 155px; height: 195px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border-mid); background: var(--bg-2); position: relative; }
-    .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
-    .photo-placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--text-muted); }
-    .photo-placeholder svg { width: 44px; height: 44px; opacity: 0.25; }
-    .photo-placeholder span { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; }
-    .resume-btn {
-      display: inline-flex; align-items: center; gap: 7px; background: var(--bg-2);
-      border: 1px solid var(--border-mid); border-radius: var(--radius-sm); padding: 8px 16px;
-      font-size: 0.75rem; font-weight: 600; color: var(--text-mid); letter-spacing: 0.04em;
-      transition: border-color 0.2s, color 0.2s; width: 100%; justify-content: center;
-    }
-    .resume-btn:hover { border-color: var(--tan); color: var(--tan); }
-    .resume-btn svg { width: 13px; height: 13px; }
-    .avail-badge {
-      display: inline-flex; align-items: center; gap: 8px; background: rgba(100,190,120,0.07);
-      border: 1px solid rgba(100,190,120,0.18); border-radius: 999px; padding: 5px 14px 5px 10px;
-      font-size: 0.72rem; color: #6bbd84; font-weight: 500; margin-bottom: 22px;
-    }
-    .avail-dot { width: 7px; height: 7px; background: #6bbd84; border-radius: 50%; animation: pulse 2.2s infinite; }
-    @keyframes pulse {
-      0%   { box-shadow: 0 0 0 0 rgba(107,189,132,0.7); }
-      70%  { box-shadow: 0 0 0 7px rgba(107,189,132,0); }
-      100% { box-shadow: 0 0 0 0 rgba(107,189,132,0); }
-    }
-    .hero-name { font-family: 'Syne', sans-serif; font-size: clamp(2.4rem, 5.5vw, 4rem); font-weight: 800; line-height: 1.0; letter-spacing: -0.03em; margin-bottom: 14px; }
-    .hero-name .surname { color: var(--tan); }
-    .hero-roles { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
-    .role-chip { font-size: 0.75rem; font-weight: 500; color: var(--text-mid); background: var(--bg-2); border: 1px solid var(--border); border-radius: 999px; padding: 5px 15px; }
-    .hero-bio { color: var(--text-mid); font-size: 0.96rem; font-weight: 300; max-width: 500px; margin-bottom: 34px; line-height: 1.8; border-left: 2px solid var(--border-mid); padding-left: 18px; }
-    .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
-    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--tan); color: #0f0e0c; font-size: 0.83rem; font-weight: 700; letter-spacing: 0.03em; padding: 12px 26px; border-radius: var(--radius-sm); transition: opacity 0.2s, transform 0.15s; }
-    .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
-    .btn-outline { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--text-mid); font-size: 0.83rem; font-weight: 500; padding: 12px 26px; border-radius: var(--radius-sm); border: 1px solid var(--border-mid); transition: border-color 0.2s, color 0.2s; }
-    .btn-outline:hover { border-color: var(--tan); color: var(--tan); }
-    .hero-stats { display: flex; gap: 0; margin-top: 44px; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; width: fit-content; }
-    .stat-item { padding: 18px 30px; border-right: 1px solid var(--border); text-align: center; }
-    .stat-item:last-child { border-right: none; }
-    .stat-num { font-family: 'Syne', sans-serif; font-size: 1.6rem; font-weight: 800; color: var(--tan); line-height: 1; }
-    .stat-label { font-size: 0.69rem; color: var(--text-muted); font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; margin-top: 4px; }
-
-    hr.divider { border: none; border-top: 1px solid var(--border); }
-
-    #offer { background: var(--bg); }
-    .offer-header { margin-bottom: 56px; }
-    .offer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .offer-card { background: var(--bg-2); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px 28px; transition: border-color 0.25s, transform 0.25s; }
-    .offer-card:hover { border-color: var(--border-mid); transform: translateY(-3px); }
-    .offer-card:nth-child(2) { border-top: 2px solid var(--tan); }
-    .offer-icon { width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 18px; }
-    .icon-blue  { background: rgba(18,35,46,0.8); }
-    .icon-tan   { background: rgba(212,163,115,0.12); }
-    .icon-sage  { background: rgba(204,213,174,0.1); }
-    .offer-card h3 { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 16px; color: var(--cream); }
-    .offer-card ul li { font-size: 0.85rem; color: var(--text-mid); font-weight: 300; padding: 6px 0; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 10px; line-height: 1.55; }
-    .offer-card ul li:last-child { border-bottom: none; }
-    .offer-card ul li::before { content: '–'; color: var(--tan); flex-shrink: 0; margin-top: 1px; }
-
-    #skills { background: var(--bg-2); }
-    .skills-header { margin-bottom: 52px; }
-    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .skills-card { background: var(--bg-3); border: 1px solid var(--border); border-radius: var(--radius); padding: 30px 26px; }
-    .skills-card-title { font-family: 'Syne', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
-    .skills-card-title span { font-size: 1rem; }
-    .skill-tag-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
-    .skill-tag { font-size: 0.78rem; font-weight: 400; color: var(--text-mid); background: var(--bg-2); border: 1px solid var(--border-mid); border-radius: 6px; padding: 6px 13px; transition: border-color 0.2s, color 0.2s; }
-    .skill-tag:hover { border-color: var(--tan); color: var(--tan); }
-    .skill-tag.empty { color: var(--text-muted); border-style: dashed; border-color: var(--border); cursor: default; opacity: 0.5; }
-    .skill-tag.empty:hover { border-color: var(--border); color: var(--text-muted); }
-
-    #tools { background: var(--bg); }
-    .tools-header { margin-bottom: 52px; }
-    .tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
-    .tool-card { background: var(--bg-2); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 18px; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; transition: border-color 0.2s, transform 0.2s; cursor: default; }
-    .tool-card:hover { border-color: var(--border-mid); transform: translateY(-2px); }
-    .tool-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; background: var(--bg-3); border: 1px solid var(--border); overflow: hidden; padding: 6px; }
-    .tool-icon img { width: 100%; height: 100%; object-fit: contain; border-radius: 4px; }
-    .tool-name { font-size: 0.76rem; font-weight: 500; color: var(--text-mid); line-height: 1.3; }
-
-    #projects { background: var(--bg-2); }
-    .projects-header { margin-bottom: 52px; }
-    .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-    .project-card { background: var(--bg-3); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: border-color 0.25s, transform 0.25s; }
-    .project-card:hover { border-color: var(--border-mid); transform: translateY(-3px); }
-    .project-thumb { height: 170px; background: var(--bg-navy); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
-    .project-thumb-icon { font-size: 3rem; opacity: 0.6; }
-    .project-thumb-label { position: absolute; top: 14px; left: 14px; background: rgba(15,14,12,0.7); backdrop-filter: blur(8px); border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 0.7rem; font-weight: 600; padding: 5px 12px; color: var(--cream); letter-spacing: 0.04em; }
-    .project-body { padding: 22px 24px; }
-    .project-body h3 { font-family: 'Syne', sans-serif; font-size: 0.97rem; font-weight: 700; color: var(--cream); margin-bottom: 8px; }
-    .project-body p { font-size: 0.82rem; color: var(--text-muted); font-weight: 300; line-height: 1.65; margin-bottom: 14px; }
-    .project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-    .project-tag { font-size: 0.67rem; font-weight: 500; color: var(--tan); background: rgba(212,163,115,0.08); border: 1px solid rgba(212,163,115,0.18); border-radius: 4px; padding: 3px 10px; letter-spacing: 0.04em; }
-    .project-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.76rem; font-weight: 600; color: var(--tan); margin-top: 14px; transition: opacity 0.2s; }
-    .project-link:hover { opacity: 0.75; }
-
-    .project-thumb-logo { width: 56px; height: 56px; border-radius: 12px; background: #fff; display: flex; align-items: center; justify-content: center; padding: 10px; }
-    .project-thumb-logo img { width: 100%; height: 100%; object-fit: contain; }
-
-    #store { background: var(--bg); }
-    .store-header { margin-bottom: 52px; }
-    .store-card {
-      background: var(--bg-2); border: 1px solid var(--border); border-radius: var(--radius);
-      overflow: hidden; display: grid; grid-template-columns: 1fr 1fr;
-    }
-    .store-visual {
-      background: var(--bg-navy); display: flex; flex-direction: column; align-items: center;
-      justify-content: center; gap: 14px; padding: 48px 32px; position: relative; overflow: hidden;
-    }
-    .store-visual::before {
-      content: ''; position: absolute; top: -40%; left: -20%; width: 260px; height: 260px;
-      background: radial-gradient(circle, rgba(212,163,115,0.1) 0%, transparent 70%); pointer-events: none;
-    }
-    .store-logo-badge {
-      width: 72px; height: 72px; border-radius: 16px; background: #fff; display: flex;
-      align-items: center; justify-content: center; padding: 14px; position: relative; z-index: 1;
-    }
-    .store-logo-badge img { width: 100%; height: 100%; object-fit: contain; }
-    .store-visual-name { font-family: 'Syne', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--cream); position: relative; z-index: 1; }
-    .store-visual-tag { font-size: 0.78rem; color: var(--text-mid); font-weight: 300; text-align: center; max-width: 260px; position: relative; z-index: 1; }
-    .store-lock-note {
-      display: inline-flex; align-items: center; gap: 7px; background: rgba(212,163,115,0.1);
-      border: 1px solid rgba(212,163,115,0.22); border-radius: 999px; padding: 5px 14px;
-      font-size: 0.7rem; color: var(--tan); font-weight: 600; letter-spacing: 0.03em; position: relative; z-index: 1;
-    }
-    .store-body { padding: 40px 40px; display: flex; flex-direction: column; justify-content: center; }
-    .store-body h3 { font-family: 'Syne', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--cream); margin-bottom: 12px; }
-    .store-body p { font-size: 0.86rem; color: var(--text-mid); font-weight: 300; line-height: 1.75; margin-bottom: 22px; }
-    .store-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 26px; }
-    .store-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-
-    @media (max-width: 720px) {
-      .store-card { grid-template-columns: 1fr; }
-      .store-visual { padding: 36px 24px; }
-      .store-body { padding: 32px 28px; }
-    }
-
-    #connect { background: var(--bg); }
-    .connect-inner { display: grid; grid-template-columns: 1fr auto; gap: 60px; align-items: start; }
-    .connect-text h2 { font-family: 'Syne', sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 14px; }
-    .connect-text p { color: var(--text-mid); font-size: 0.95rem; font-weight: 300; max-width: 420px; margin-bottom: 30px; }
-    .contact-links { display: flex; flex-wrap: wrap; gap: 12px; }
-    .contact-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--bg-2); border: 1px solid var(--border-mid); border-radius: var(--radius-sm); padding: 11px 20px; font-size: 0.8rem; font-weight: 600; color: var(--text-mid); letter-spacing: 0.03em; transition: border-color 0.2s, color 0.2s, background 0.2s; }
-    .contact-btn:hover { border-color: var(--tan); color: var(--tan); background: rgba(212,163,115,0.05); }
-    .contact-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
-    .cta-box { background: var(--bg-navy); border: 1px solid rgba(212,163,115,0.2); border-radius: var(--radius); padding: 36px 32px; text-align: center; min-width: 260px; }
-    .cta-box .emoji { font-size: 2rem; margin-bottom: 14px; }
-    .cta-box h4 { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 8px; color: var(--cream); }
-    .cta-box p { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 20px; line-height: 1.6; }
-
-    footer { background: var(--bg-2); border-top: 1px solid var(--border); padding: 32px 0; }
-    .footer-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-    .footer-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 0.9rem; }
-    .footer-logo span { color: var(--tan); }
-    .footer-copy { font-size: 0.74rem; color: var(--text-muted); }
-    .footer-links { display: flex; gap: 20px; }
-    .footer-links a { font-size: 0.74rem; color: var(--text-muted); transition: color 0.2s; }
-    .footer-links a:hover { color: var(--tan); }
-
-    @media (max-width: 860px) {
-      .hero-inner { grid-template-columns: 1fr; gap: 36px; }
-      .hero-photo-wrap { flex-direction: row; align-items: flex-end; gap: 16px; }
-      .hero-photo { width: 110px; height: 140px; }
-      .resume-btn { width: auto; }
-      .offer-grid, .skills-grid { grid-template-columns: 1fr; }
-      .projects-grid { grid-template-columns: 1fr; }
-      .connect-inner { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 600px) {
-      .container { padding: 0 18px; }
-      section { padding: 70px 0; }
-      .nav-links { display: none; }
-      .hero-stats { flex-direction: column; width: 100%; }
-      .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
-      .stat-item:last-child { border-bottom: none; }
-    }
-  </style>
->>>>>>> 1910dfab14f70ffd438e8c38c4fdec982fd01d35
 </head>
 <body>
 
   <!-- ══ NAV ══ -->
   <nav>
     <div class="nav-inner">
-<<<<<<< HEAD
       <a href="#hero" class="nav-logo">BDL <span>.</span></a>
-=======
-      <div class="nav-logo">BDL <span>.</span></div>
->>>>>>> 1910dfab14f70ffd438e8c38c4fdec982fd01d35
       <div class="nav-links">
         <a href="#offer">Services</a>
         <a href="#skills">Skills</a>
         <a href="#tools">Tools</a>
         <a href="#projects">Projects</a>
-<<<<<<< HEAD
-=======
-        <a href="#automation">Automation</a>
-        <a href="#store">Store</a>
->>>>>>> 1910dfab14f70ffd438e8c38c4fdec982fd01d35
         <a href="#connect">Contact</a>
       </div>
     </div>
@@ -305,22 +30,9 @@
       <div class="hero-inner">
         <div class="hero-photo-wrap">
           <div class="hero-photo">
-<<<<<<< HEAD
             <img src="assets/profileimg/bon_profile_photo_grey.jpg" alt="Bon Dionie Luib" />
           </div>
           <a href="https://drive.google.com/file/d/1orsD3d_-xPIOeZKfNbFX2Cq41ctTac8B/view?usp=sharing" class="resume-btn" target="_blank" rel="noopener">
-=======
-              <img src="./bon_profile_photo_grey.jpg" alt="Bon Dionie Luib" />
-            <div class="photo-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                <circle cx="12" cy="8" r="4"/>
-                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-              </svg>
-              <span>Your Photo</span>
-            </div>
-          </div>
-          <a href="https://drive.google.com/file/d/1orsD3d_-xPIOeZKfNbFX2Cq41ctTac8B/view?usp=sharing" class="resume-btn" target="_blank">
->>>>>>> 1910dfab14f70ffd438e8c38c4fdec982fd01d35
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
               <polyline points="14 2 14 8 20 8"/>
@@ -351,11 +63,7 @@
           </p>
           <div class="hero-cta">
             <a href="#connect" class="btn-primary">Let's Work Together</a>
-<<<<<<< HEAD
             <a href="projects.html" class="btn-outline">View My Work</a>
-=======
-            <a href="https://linktr.ee/bonnieeebon" class="btn-outline" target="_blank">View My Work</a>
->>>>>>> 1910dfab14f70ffd438e8c38c4fdec982fd01d35
           </div>
           <div class="hero-stats">
             <div class="stat-item">
@@ -367,11 +75,7 @@
               <div class="stat-label">Core Services</div>
             </div>
             <div class="stat-item">
-<<<<<<< HEAD
               <div class="stat-num">15+</div>
-=======
-              <div class="stat-num">10+</div>
->>>>>>> 1910dfab14f70ffd438e8c38c4fdec982fd01d35
               <div class="stat-label">Tools Used</div>
             </div>
           </div>
@@ -496,7 +200,6 @@
         <p class="section-desc">Tools I've worked with or currently learning.</p>
       </div>
       <div class="tools-grid">
-<<<<<<< HEAD
         <div class="tool-card"><div class="tool-icon"><img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" /></div><div class="tool-name">Shopify</div></div>
         <div class="tool-card"><div class="tool-icon"><img src="assets/toolsimg/shopee-1.svg" alt="Shopee" /></div><div class="tool-name">Shopee Admin</div></div>
         <div class="tool-card"><div class="tool-icon"><img src="https://cdn.worldvectorlogo.com/logos/zendesk-1.svg" alt="Zendesk" /></div><div class="tool-name">Zendesk</div></div>
@@ -515,123 +218,12 @@
         <div class="tool-card"><div class="tool-icon"><img src="assets/toolsimg/calendly.svg" alt="Calendly" /></div><div class="tool-name">Calendly</div></div>
         <div class="tool-card"><div class="tool-icon"><img src="assets/toolsimg/googlemeet.svg" alt="Google Meet" /></div><div class="tool-name">Google Meet</div></div>
         <div class="tool-card"><div class="tool-icon"><img src="assets/toolsimg/googledrive.svg" alt="Google Drive" /></div><div class="tool-name">Google Drive</div></div>
-=======
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" />
-          </div>
-          <div class="tool-name">Shopify</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="./shopee-1.svg" alt="Shopee" />
-          </div>
-          <div class="tool-name">Shopee Admin</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="https://cdn.worldvectorlogo.com/logos/zendesk-1.svg" alt="Zendesk" />
-          </div>
-          <div class="tool-name">Zendesk</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="./microsoft-outlook-2013-logo.svg" alt="Microsoft Outlook" />
-          </div>
-          <div class="tool-name">Microsoft Outlook</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="https://cdn.worldvectorlogo.com/logos/microsoft-teams-1.svg" alt="Microsoft Teams" />
-          </div>
-          <div class="tool-name">Microsoft Teams</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="https://cdn.worldvectorlogo.com/logos/google-docs-icon-2.svg" alt="Google Docs" />
-          </div>
-          <div class="tool-name">Google Docs</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="https://cdn.worldvectorlogo.com/logos/google-sheets-logo-icon.svg" alt="Google Sheets" />
-          </div>
-          <div class="tool-name">Google Sheets</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="./canva-wordmark-2.svg" alt="Canva" />
-          </div>
-          <div class="tool-name">Canva</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="./chatgpt-6.svg" alt="ChatGPT" />
-          </div>
-          <div class="tool-name">ChatGPT AI</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="https://cdn.worldvectorlogo.com/logos/zoom-app.svg" alt="Zoom" />
-          </div>
-          <div class="tool-name">Zoom</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="./notion-2.svg" alt="Notion" />
-          </div>
-          <div class="tool-name">Notion</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="./62b32181b223544c209f5e97.png" alt="Gorgias" />
-          </div>
-          <div class="tool-name">Gorgias</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="./openrouter.svg" alt="OpenRouter" />
-          </div>
-          <div class="tool-name">OpenRouter</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="./n8n.svg" alt="n8n" />
-          </div>
-          <div class="tool-name">n8n</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="./groq.svg" alt="Groq" />
-          </div>
-          <div class="tool-name">Groq</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="./calendly.svg" alt="Calendly" />
-          </div>
-          <div class="tool-name">Calendly</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="./googlemeet.svg" alt="Google Meet" />
-          </div>
-          <div class="tool-name">Google Meet</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-icon" style="background:#fff; border-color:#e0dbd3; padding:5px;">
-            <img src="./googledrive.svg" alt="Google Drive" />
-          </div>
-          <div class="tool-name">Google Drive</div>
-        </div>
->>>>>>> 1910dfab14f70ffd438e8c38c4fdec982fd01d35
       </div>
     </div>
   </section>
 
   <hr class="divider" />
 
-<<<<<<< HEAD
   <!-- ══ CURRENT PROJECT ══ -->
   <section id="projects">
     <div class="container">
@@ -675,239 +267,6 @@
             </a>
           </div>
         </div>
-=======
-  <!-- ══ PROJECTS ══ -->
-  <section id="projects">
-    <div class="container">
-      <div class="projects-header">
-        <div class="section-eyebrow">Projects &amp; Work Samples</div>
-        <h2 class="section-title">Hands-on <span class="heading-accent">demos.</span></h2>
-        <p class="section-desc">This section highlights my ongoing work in Shopify store management — practicing key operational tasks such as product uploads, listing optimization, inventory management, and more.</p>
-      </div>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-thumb">
-            <div class="project-thumb-icon">🛒</div>
-            <div class="project-thumb-label">Shopify Product Listing Demo</div>
-          </div>
-          <div class="project-body">
-            <h3>Shopify Product Listing Demo</h3>
-            <p>Demonstrates my ability to upload and organize product listings in Shopify, including variants, descriptions, and basic SEO optimization.</p>
-            <div class="project-tags">
-              <span class="project-tag">Shopify</span>
-              <span class="project-tag">Product Listing</span>
-              <span class="project-tag">Inventory</span>
-            </div>
-            <a href="https://www.notion.so/Shopify-Product-Listing-Demo-31e51b3a9e2280059d68d53b6122286f?source=copy_link" class="project-link">
-              View Demo
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-thumb">
-            <div class="project-thumb-icon">📦</div>
-            <div class="project-thumb-label">Store Management Demo</div>
-          </div>
-          <div class="project-body">
-            <h3>Store Management Demo</h3>
-            <p>A walkthrough of daily store operations including order processing, fulfillment coordination, inventory updates, and purchase order creation.</p>
-            <div class="project-tags">
-              <span class="project-tag">Shopify</span>
-              <span class="project-tag">Order Processing</span>
-              <span class="project-tag">Operations</span>
-            </div>
-            <a href="https://www.notion.so/Shopify-Store-Operations-Demo-31f51b3a9e2280368b6fe1f8407c3c40?source=copy_link" class="project-link">
-              View Demo
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-thumb">
-            <div class="project-thumb-icon">🏪</div>
-            <div class="project-thumb-label">Shopify Store Demonstration</div>
-          </div>
-          <div class="project-body">
-            <h3>Shopify Store Demonstration</h3>
-            <p>End-to-end store setup demonstration covering theme configuration, product segmentation, and customer profile management.</p>
-            <div class="project-tags">
-              <span class="project-tag">Shopify</span>
-              <span class="project-tag">Store Setup</span>
-              <span class="project-tag">CRM</span>
-            </div>
-            <a href="https://www.notion.so/Shopify-Store-Demonstration-33151b3a9e2280c7928add0d9a842cef?source=copy_link" class="project-link">
-              View Demo
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-thumb">
-            <div class="project-thumb-icon">🔴</div>
-            <div class="project-thumb-label">Shopify Live Store Demo</div>
-          </div>
-          <div class="project-body">
-            <h3>Shopify Live Store Demo</h3>
-            <p>A live walkthrough of a working Shopify store, showcasing real-time operations, customer data handling, and backend workflow management.</p>
-            <div class="project-tags">
-              <span class="project-tag">Shopify</span>
-              <span class="project-tag">Live Demo</span>
-              <span class="project-tag">Operations</span>
-            </div>
-            <a href="https://www.notion.so/Shopify-Live-Store-Demo-33d51b3a9e22800c865ad8110563a1df?source=copy_link" class="project-link">
-              View Demo
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ══ AUTOMATED WORKFLOWS ══ -->
-  <section id="automation">
-    <div class="container">
-      <div class="projects-header">
-        <div class="section-eyebrow">Automation Projects</div>
-        <h2 class="section-title">Automated <span class="heading-accent">workflows.</span></h2>
-        <p class="section-desc">Self-hosted n8n workflows I've designed and shipped — built end-to-end with API integrations, AI agents, and human-in-the-loop approvals. Full documentation and sanitized exports are on GitHub.</p>
-      </div>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-thumb">
-            <div class="project-thumb-logo">
-              <img src="https://cdn.simpleicons.org/n8n" alt="n8n" />
-            </div>
-            <div class="project-thumb-label">n8n Workflow</div>
-          </div>
-          <div class="project-body">
-            <h3>AI Real Estate Lead Qualifier</h3>
-            <p>Qualifies inbound real estate leads automatically by pulling live property data through the Rentcast API, scoring each lead's fit, and notifying agents by Gmail — with every result logged to Google Sheets for tracking.</p>
-            <div class="project-tags">
-              <span class="project-tag">n8n</span>
-              <span class="project-tag">Rentcast API</span>
-              <span class="project-tag">Gmail</span>
-              <span class="project-tag">Google Sheets</span>
-            </div>
-            <a href="https://github.com/bondionieluib-tech/ai-lead-qualifier" class="project-link">
-              View on GitHub
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-thumb">
-            <div class="project-thumb-logo">
-              <img src="https://cdn.simpleicons.org/n8n" alt="n8n" />
-            </div>
-            <div class="project-thumb-label">n8n Workflow</div>
-          </div>
-          <div class="project-body">
-            <h3>Interview Manager (AI Applicant Qualifier)</h3>
-            <p>Scores incoming job applicants automatically, routes borderline candidates for human approval via Gmail's sendAndWait, and schedules interviews through Google Meet — turning a manual hiring bottleneck into a self-running pipeline.</p>
-            <div class="project-tags">
-              <span class="project-tag">n8n</span>
-              <span class="project-tag">Gmail sendAndWait</span>
-              <span class="project-tag">Google Meet</span>
-              <span class="project-tag">Google Sheets</span>
-            </div>
-            <a href="https://github.com/bondionieluib-tech/ai-applicant-interview-manager" class="project-link">
-              View on GitHub
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-thumb">
-            <div class="project-thumb-logo">
-              <img src="https://cdn.simpleicons.org/n8n" alt="n8n" />
-            </div>
-            <div class="project-thumb-label">n8n Workflow</div>
-          </div>
-          <div class="project-body">
-            <h3>Automated Dental Appointment Setting</h3>
-            <p>A Dental clinic appointment automation using n8n. Manages new, reschedule, and cancel flows via Google Forms. Automatically detects patient type, sends personalized emails, updates Airtable records, and notifies staff via Telegram. Includes email/phone verification and data backup.</p>
-            <div class="project-tags">
-              <span class="project-tag">n8n</span>
-              <span class="project-tag">Airtable</span>
-              <span class="project-tag">Google Forms</span>
-              <span class="project-tag">Google Sheets</span>
-              <span class="project-tag">Webhooks</span>
-            </div>
-            <a href="https://github.com/bondionieluib-tech/dental-appointment-flow" class="project-link">
-              View on GitHub
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-thumb">
-            <div class="project-thumb-logo">
-              <img src="https://cdn.simpleicons.org/n8n" alt="n8n" />
-            </div>
-            <div class="project-thumb-label">n8n Workflow</div>
-          </div>
-          <div class="project-body">
-            <h3>Amazon Product Research</h3>
-            <p>Automated Amazon product research pipeline (n8n + SerpAPI + Google Sheets + Groq/Llama) that scores competition level and sends AI-generated buy/pass recommendations to Telegram.</p>
-            <div class="project-tags">
-              <span class="project-tag">n8n</span>
-              <span class="project-tag">HTTP Request</span>
-              <span class="project-tag">SerpAPI</span>
-              <span class="project-tag">Google Sheets</span>
-              <span class="project-tag">Telegram</span>
-            </div>
-            <a href="https://github.com/bondionieluib-tech/amazon-product-research" class="project-link">
-              View on GitHub
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- ══ WAZY STORE ══ -->
-  <section id="store">
-    <div class="container">
-      <div class="store-header">
-        <div class="section-eyebrow">Live Store</div>
-        <h2 class="section-title">The <span class="heading-accent">FineNine</span> store.</h2>
-        <p class="section-desc">A women's vintage &amp; modern apparel Shopify store I run end-to-end — product listings, inventory, and customer support. It's password-protected while I'm iterating, so recruiters and clients can request a look inside.</p>
-      </div>
-      <div class="store-card">
-        <div class="store-visual">
-          <div class="store-lock-note">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-            Password Protected
-          </div>
-          <div class="store-logo-badge">
-            <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="FineNine" />
-          </div>
-          <div class="store-visual-name">FineNine</div>
-          <div class="store-visual-tag">Women's vintage &amp; modern apparel, built and run on Shopify.</div>
-        </div>
-        <div class="store-body">
-          <h3>FineNine — Women's Fashion, Shopify</h3>
-          <p>I manage this store's full storefront and back-office operations: product uploads and variants, inventory tracking, order fulfillment, and customer support. It's a live, working example of the same Shopify skills I bring to client stores — not a demo environment.</p>
-          <div class="store-tags">
-            <span class="project-tag">Shopify</span>
-            <span class="project-tag">Product Listing</span>
-            <span class="project-tag">Inventory Mgmt</span>
-            <span class="project-tag">Order Fulfillment</span>
-          </div>
-          <div class="store-actions">
-            <!-- TODO: replace # with the live Wazy store URL -->
-            <a href="https://finenine-2.myshopify.com" class="btn-primary" target="_blank">Visit Store</a>
-            <a href="mailto:bondionieluib@gmail.com?subject=FineNine%20Store%20Password%20Request&body=Hi%20Bon%2C%0A%0ACould%20I%20get%20the%20store%20password%20for%20FineNine%3F%0A%0AThanks!" class="btn-outline">Request Store Password</a>
-          </div>
-        </div>
->>>>>>> 1910dfab14f70ffd438e8c38c4fdec982fd01d35
       </div>
     </div>
   </section>
@@ -923,11 +282,7 @@
           <h2>Let's work<br><span class="heading-accent">together.</span></h2>
           <p>Feel free to reach out if you're looking for support in customer service or e-commerce operations. I'm always open to new opportunities and collaborations.</p>
           <div class="contact-links">
-<<<<<<< HEAD
             <a href="https://www.linkedin.com/in/bondionie-luib" target="_blank" rel="noopener" class="contact-btn">
-=======
-            <a href="www.linkedin.com/in/bondionie-luib" target="_blank" class="contact-btn">
->>>>>>> 1910dfab14f70ffd438e8c38c4fdec982fd01d35
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
               </svg>
@@ -939,21 +294,13 @@
               </svg>
               Gmail
             </a>
-<<<<<<< HEAD
             <a href="https://t.me/bon_luib" target="_blank" rel="noopener" class="contact-btn">
-=======
-            <a href="https://t.me/bon_luib" target="_blank" class="contact-btn">
->>>>>>> 1910dfab14f70ffd438e8c38c4fdec982fd01d35
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
               </svg>
               Telegram
             </a>
-<<<<<<< HEAD
             <a href="https://wa.me/639557933515" target="_blank" rel="noopener" class="contact-btn">
-=======
-            <a href="https://wa.me/09557933515" target="_blank" class="contact-btn">
->>>>>>> 1910dfab14f70ffd438e8c38c4fdec982fd01d35
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                 <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.856L.057 23.997l6.304-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.006-1.371l-.36-.214-3.733.979 1-3.642-.234-.374A9.772 9.772 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
@@ -966,11 +313,7 @@
           <div class="emoji">🏢</div>
           <h4>Book a Call</h4>
           <p>Let's schedule a quick discovery call to discuss how I can help your business.</p>
-<<<<<<< HEAD
           <a href="https://calendar.app.google/8JxHr8yGaSbAm5hw6" class="btn-primary" target="_blank" rel="noopener" style="width:100%; justify-content:center;">
-=======
-          <a href="https://calendar.app.google/8JxHr8yGaSbAm5hw6" class="btn-primary" style="width:100%; justify-content:center;">
->>>>>>> 1910dfab14f70ffd438e8c38c4fdec982fd01d35
             Schedule Now
           </a>
         </div>
@@ -982,18 +325,11 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-logo">BDL <span>.</span></div>
-<<<<<<< HEAD
       <div class="footer-copy">© 2026 Bon Dionie Luib. All rights reserved.</div>
       <div class="footer-links">
         <a href="#hero">Top</a>
         <a href="#offer">Services</a>
         <a href="projects.html">Projects</a>
-=======
-      <div class="footer-copy">© 2025 Bon Dionie Luib. All rights reserved.</div>
-      <div class="footer-links">
-        <a href="#hero">Top</a>
-        <a href="#offer">Services</a>
->>>>>>> 1910dfab14f70ffd438e8c38c4fdec982fd01d35
         <a href="#connect">Contact</a>
       </div>
     </div>
